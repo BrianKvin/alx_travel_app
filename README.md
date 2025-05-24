@@ -155,6 +155,20 @@ pip install django djangorestframework drf-yasg django-environ mysqlclient
 
 - Access the RabbitMQ Management Console via a web browser at http://localhost:15672/. The default username and password are both "guest".
 
+- Install Celery
+```
+pip install celery
+Optional (but recommended for Django):
+
+```
+pip install django-celery-results
+If you plan to use Redis or RabbitMQ as a message broker:
+
+For Redis (most common):
+
+```
+pip install redis
+
 ## 🔗 Useful Links
 
 * [Django Documentation](https://docs.djangoproject.com/en/stable/)
