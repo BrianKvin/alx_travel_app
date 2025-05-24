@@ -124,6 +124,36 @@ alxtravelapp/
 ```
 
 ---
+## Installation Guides
+pip install django djangorestframework drf-yasg django-environ mysqlclient
+
+- Install RabbitMQ on Linux Mint
+- To install RabbitMQ on Linux Mint, you can follow these steps:
+
+- Update your system:
+- sudo apt-get update
+- sudo apt-get upgrade
+
+- Install Erlang, which is a dependency for RabbitMQ: You can get the latest version of Erlang from Team RabbitMQ on Launchpad. Add the repository and install Erlang:
+
+- wget https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-adv.key
+- sudo apt-key add rabbitmq-adv.key
+- echo 'deb https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-erlang/deb/ubuntu/ $(lsb_release -cs) main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
+- echo 'deb https://dl.cloudsmith.io/public/rabbitmq/rabbitmq-server/deb/ubuntu/ $(lsb_release -cs) main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
+- sudo apt-get update
+- sudo apt-get install erlang
+
+- Install RabbitMQ:
+- sudo apt-get install rabbitmq-server
+- Start the RabbitMQ service:
+- sudo systemctl start rabbitmq-server
+
+- Enable RabbitMQ to start automatically on boot:
+- sudo systemctl enable rabbitmq-server
+- Optionally, enable the RabbitMQ Management Console:
+- sudo rabbitmq-plugins enable rabbitmq_management
+
+- Access the RabbitMQ Management Console via a web browser at http://localhost:15672/. The default username and password are both "guest".
 
 ## 🔗 Useful Links
 
@@ -135,4 +165,4 @@ alxtravelapp/
 
 ---
 
-Let me know if you want this exported into a file or need a badge/logo section!
+
