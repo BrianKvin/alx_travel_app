@@ -169,6 +169,11 @@ For Redis (most common):
 ```
 pip install redis
 
+# Mysqlclient
+sudo apt install libssl-dev libffi-dev
+pip install --upgrade pip setuptools wheel
+pip install mysqlclient
+
 ## 🔗 Useful Links
 
 * [Django Documentation](https://docs.djangoproject.com/en/stable/)
