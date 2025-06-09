@@ -1,10 +1,3 @@
----
-
-# 🧳 alxtravelapp
-
-**alxtravelapp** is a real-world Django application designed to serve as the foundation for a scalable travel listing platform. This project focuses on establishing robust backend infrastructure, integrating Swagger for API documentation, and using MySQL for reliable data management — all while following industry best practices.
-
----
 
 ## 📚 About the Project
 
